@@ -1,33 +1,39 @@
-*{
+*{ /* Para aplicar las propiedades a toda la página*/
     margin: 0px;
     padding: 0px;
     font-family: Arial;
+    font-size: 16px;
+    /* border: solid red; */
     
 }
-
-.enviar-derecha{
+h1{
+    font-size: 2rem;
+}
+.enviar-derecha{ /*Para mover las imagenes o divs a la derecha*/
     margin-left: auto;
 }
 body{
     background: #EDEDED;
 }
-#navegador{
-    background-color: #3B3B3B;
-    color: #FFFFFF;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#navegador{ /* "Barra de navegación"*/
+    background-color: #3B3B3B; /* Color del fondo de la barra*/
+    color: #FFFFFF; /*Color del texto*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: solid green;  */
 
 }
 
-nav{
+nav{    
     max-width: 1100px;
     margin: auto;
+    /* border: solid yellow; */
 }
 
 nav ul{
     display: flex;
     align-items: center;
-    
+    /* border: solid blue; */
 }
 
 nav li{
@@ -37,6 +43,7 @@ nav li{
     list-style: none;
     margin-right: 10px;
     border-radius: 2px;
+    /* border: solid brown; */
 }
 
 nav li:hover{
@@ -44,6 +51,9 @@ nav li:hover{
     cursor: pointer;
 }
 
+h1{
+    font-size: 2rem;
+}
 /*NAVEGADOR*/
 
 /*CONTENEDOR*/
@@ -54,35 +64,76 @@ nav li:hover{
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
-    
+    /* border: solid purple;  */
 }
 
-#contenedorInterno{
+#contenedor #contenedorInterno{
     flex-grow: 1;
     padding: 10px;
-
+    
+    /* border: solid rgb(154, 250, 0);  */
 }
 
 #contenedor aside{
     width: 300px;
-    background: blue;
+    background: #AEAEAE;
     padding: 10px;
+    /* border: solid peru; */
+}
+
+
+.articuloRelacionado{
+    width: 280px;
+    background: #3cb2c8;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 6px;
+    color: #FFFFFF;
+    transition: all .2s;
+    
+}
+
+.articuloRelacionado:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 5px 0px #777;
 }
 
 .categoria{
     display: flex;
     background: #F1F1F1;
     padding: 10px;
+    margin-bottom: 10px;
     border-bottom: solid 1.5px #B5B5B5;
+    /* border: solid red; */
 
 }
 
-.articuloRelacionado{
-    width: 280px;
-    height: 150px;
-    background: red;
-    margin: auto;
-    margin-bottom: 5px;
-    
+.navPost{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    border-top: solid 2px #E9E9E9;
+}
+
+.navPost div{
+    flex-grow: 1;
+    padding: 10px;
+    /* border: solid red; */
 }
 /*CONTENEDOR*/
+
+/*FOOTER*/
+section#footer{
+    background-color: #3B3B3B; /* Color del fondo de la barra*/
+    color: #FFFFFF; /*Color del texto*/
+}
+
+footer{
+    display: flex;
+    max-width: 1100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: space-between;
+}
+/*FOOTER*/
